@@ -36,9 +36,9 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarsExample03">
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-sm-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -51,15 +51,79 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Sección 3</a>
             </li>
-          </ul>
-          <form class="d-flex">
+          </ul> -->
+          <!-- Se añade menú laterál -->
+          <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="ms-2">Secciones</li>
+              <li><a class="dropdown-item" href="#">Home</a></li>
+              <li><a class="dropdown-item" href="#">Sección 1</a></li>
+              <li><a class="dropdown-item" href="#">Sección 2</a></li>
+              <li><a class="dropdown-item" href="#">Sección 3</a></li>
+            </ul>
+          </div>
+          <form class="d-flex  ms-5">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-light" type="submit">Buscar</button>
           </form>
         </div>
       </div>
     </nav>
-
+    <main>
+      <!-- barra lateral falta ponerla a la izquierda y añadir código svg de las imágenes-->
+      <!-- https://getbootstrap.com/docs/5.0/examples/sidebars/# -->
+      <aside>
+        <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
+          <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" aria-describedby="tooltip701185">
+            <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="visually-hidden">Icon-only</span>
+          </a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item">
+              <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
+                <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
+              </a>
+            </li>
+          </ul>
+          <div class="dropdown border-top">
+            <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/profilePic.png" alt="Ron" width="24" height="24" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      
+    </main>
     <!-- contacto -->
     
     <div class="container mt-3">
