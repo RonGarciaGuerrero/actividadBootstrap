@@ -91,12 +91,82 @@
         </div>
       </div>
     </nav>
-    <!-- <main> -->
+    <!-- barra lateral -->
+    
+    <div class="container">
+      <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+          <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          <span class="fs-5 fw-semibold">Collapsible</span>
+        </a>
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+              Home
+            </button>
+            <div class="collapse show" id="home-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Updates</a></li>
+                <li><a href="#" class="link-dark rounded">Reports</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+              Dashboard
+            </button>
+            <div class="collapse" id="dashboard-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">Overview</a></li>
+                <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                <li><a href="#" class="link-dark rounded">Annually</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+              Orders
+            </button>
+            <div class="collapse" id="orders-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">New</a></li>
+                <li><a href="#" class="link-dark rounded">Processed</a></li>
+                <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                <li><a href="#" class="link-dark rounded">Returned</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="border-top my-3"></li>
+          <li class="mb-1">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+              Account
+            </button>
+            <div class="collapse" id="account-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li><a href="#" class="link-dark rounded">New...</a></li>
+                <li><a href="#" class="link-dark rounded">Profile</a></li>
+                <li><a href="#" class="link-dark rounded">Settings</a></li>
+                <li><a href="#" class="link-dark rounded">Sign out</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
       
-      <!-- barra lateral-->
+
+      <!-- barra lateral height:calc(100vh - 60px)-->
       
-      <div class="position-relative">
-        <div class="d-flex flex-column flex-shrink-0 bg-light position-absolute top-0 end-0" style="width: 4.5rem;height:calc(100vh - 60px);">
+      <div class="position-relative d-flex"> 
+        <div class="vh-100 flex-column bg-light position-absolute top-0 end-0" style="width: 4.5rem;">
           <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only" aria-describedby="tooltip701185">
             <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
             <span class="visually-hidden">Icon-only</span>
@@ -166,16 +236,16 @@
     
     <!-- footer -->
     <div class="container mt-3 bg-light">
-      <footer class="py-5">
+      <footer class=" pt-5 px-5 mx-5">
         <div class="row justify-content-around">
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12 bg-secondary align-self-auto border border-dark border-end-0">
+          <div class="col-xl-2 col-lg-3 col-md-2 col-sm-12 col-xs-12 bg-secondary align-self-auto border border-dark border-end-0">
             <img src="./img/web.png" alt="logo" height="60px">
-            <h5 class="text-light">Secciones</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Sección 1</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Sección 2</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Sección 3</a></li>
+            <h6 class="text-light">Secciones</h6>
+            <ul class="nav flex-column te">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light"><h6>Home</h6></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light"><h6>Sección 1</h6></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light"><h6>Sección 2</h6></a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light"><h6>Sección 3</h6></a></li>
 
             </ul>
           </div>
@@ -190,27 +260,36 @@
                 <td> Calle, Feria 100 <br>41000 <br/> Sevilla - Sevilla, España</td>
               </tr>
               <tr>
-                <td>info@domoticasistemas.com</td>
+                <td>info@info.com</td>
               </tr>
             </table>
           </div>
     <!-- col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 offset-6-->
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 align-self-start border border-secondary pb-5">
             <form>
-
+              <div>
+                
+              </div>
               <h5>Suscribete a nuestro newsletter</h5>
               <p class="pb-5">Mensualmente te enviaremos noticias.</p>
               <br>
-              <div class="d-flex w-100 gap-2">  
-                <label for="newsletter1" class="visually-hidden">Email</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Escribe aqui tu email">
-                <button class="btn btn-outline-primary" type="button">Suscribete</button><br><br>
+              <div class="d-flex w-100 gap-2 container">  
+                <!-- <label for="newsletter1" class="visually-hidden">Email</label>  -->
+                <div class="row">
+                  <div >
+                  <input id="newsletter1" type="text" class="m-2 form-control" placeholder="Escribe aqui tu email">
+                </div>
+                <div>
+                  <button class="btn btn-outline-primary w-100 m-2" type="button">Suscribete</button><br><br>
+                </div>
+                  
+              </div>
               </div>
             </form>
           </div>
         </div>
     
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <div class="d-flex justify-content-between pt-2 px-4 my-4 border-top">
           <p>© 2021 Ron Garcia, Inc. Derechos reservados.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
