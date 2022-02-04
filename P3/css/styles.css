@@ -1,0 +1,10 @@
+.nav-link:hover {
+  color: rgba(255, 0, 0, 0.85);
+  background-color: #d2f4ea;
+}
+.bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+  }
+  /* regla para el svg */
