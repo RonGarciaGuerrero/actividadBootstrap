@@ -1,0 +1,60 @@
+header{
+    margin-top: 10px;
+    background-color:black;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    color: white;
+    text-align: center;
+}
+
+body{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: large;
+}
+.oyentes{
+    font-size: smaller;
+    font-style: italic;
+}
+.minibio{
+    font-size: small;
+}
+td{
+    width: 300px;
+
+}
+table{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.derechos{
+    margin-top: 60px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    /* width: 100%; */
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 10px;
+    
+}
+.anio{
+    float: right;
+}
+li{
+    list-style-type: none;
+}
+.bio{
+    margin-left: 20%;
+    margin-right: 20%;
+}

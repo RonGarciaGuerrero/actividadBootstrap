@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/seleccion.css">
+</head>
+<body>
+    <header>
+        <div><img style="display: block; margin-right: auto; margin-left: auto;" src="../img/mqdefault.jpg" alt="I can make you feel better logo" width="320" height="180"> </div>
+        <h1>SELECCION ARTISTAS HYPERPOP</h1>
+    </header>
+    <div class="bio">
+        <div style="background-color:black; border-radius: 10px; width: 100%;"><img style="display: block; margin-right: auto; margin-left: auto; margin-top: 20px;" src="../img/sophie-jacketjpg.jpg" alt="SophieJacket" height="200"></div>
+        <h1>Suscribete al Newsletter</h1>
+        <p class="oyentes">Recibe periodicamente la mejor informacion de las bandas que sigues</p>
+        <div class="temas">
+            <form action="../seleccion.html">
+                <fieldset>
+                    <legend><h2>NUEVA PUBLICACIÓN:</h2></legend>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">Nombre:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" name="fname" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="fname">Apellidos:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" name="fname" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="email" name="email" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dni">DNI:</label>
+                                </td>
+                                <td>
+                                    <!-- Validaciond el DNI y NIE con una patron con expresion regular admitida por HTML5 -->
+                                    <input type="text" placeholder="DNI" class="form-control" size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduzca el dni"  value="" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="telf">Teléfono:</label>
+                                </td>
+                                <td>
+                                    <input type="telf" id="telf" name="telf" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dir">Dirección:</label>
+                                </td>
+                                <td>
+                                    <input type="dir" id="dir" name="dir" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: top;">Sexo</td>
+                                <td style="vertical-align: top;">
+                                    <input type="radio" name="sexo" value="V" checked="checked"/>Hombre<br/>
+                                    <input type="radio" name="sexo" value="M"/>Mujer<br/>
+                                    <input type="radio" name="sexo" value="NB"/>No Binario<br/><br/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Acepta condiciones:</td>
+                                <td><input type="checkbox" name="musica" required/></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" value="Submit"> <input type="reset">
+                                </td>
+                            </tr>
+                            <!-- El formulario valida que se rellenen todos los campos y cuando se envía vuelve a la página de la seleccion de artistas -->
+                        </table>
+                </fieldset>
+            </form>
+
+        <a href="../seleccion.html">Volver a la selección</a>
+    </div>
+
+</body>
+</html>
